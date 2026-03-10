@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 import json
+import logging
 import math
-import boto3
 from datetime import datetime
 from typing import Optional
 
+import boto3
+from botocore.exceptions import ClientError
+
+logger = logging.getLogger("anomaly_pipeline.baseline")
 s3 = boto3.client("s3")
 
 
@@ -21,18 +25,53 @@ class BaselineManager:
     def load(self) -> dict:
         try:
             response = s3.get_object(Bucket=self.bucket, Key=self.baseline_key)
-            return json.loads(response["Body"].read())
-        except s3.exceptions.NoSuchKey:
-            return {}
+            baseline = json.loads(response["Body"].read())
+            logger.info("Loaded baseline from s3://%s/%s", self.bucket, self.baseline_key)
+            return baseline
+
+        except ClientError as e:
+            error_code = e.response.get("Error", {}).get("Code", "")
+            if error_code in {"NoSuchKey", "404"}:
+                logger.info(
+                    "Baseline file does not exist yet at s3://%s/%s. Starting fresh.",
+                    self.bucket,
+                    self.baseline_key,
+                )
+                return {}
+
+            logger.exception(
+                "Failed to load baseline from s3://%s/%s",
+                self.bucket,
+                self.baseline_key,
+            )
+            raise
+
+        except json.JSONDecodeError:
+            logger.exception(
+                "Baseline file at s3://%s/%s is not valid JSON.",
+                self.bucket,
+                self.baseline_key,
+            )
+            raise
 
     def save(self, baseline: dict):
-        baseline["last_updated"] = datetime.utcnow().isoformat()
-        s3.put_object(
-            Bucket=self.bucket,
-            Key=self.baseline_key,
-            Body=json.dumps(baseline, indent=2),
-            ContentType="application/json"
-        )
+        try:
+            baseline["last_updated"] = datetime.utcnow().isoformat()
+            s3.put_object(
+                Bucket=self.bucket,
+                Key=self.baseline_key,
+                Body=json.dumps(baseline, indent=2),
+                ContentType="application/json",
+            )
+            logger.info("Saved baseline to s3://%s/%s", self.bucket, self.baseline_key)
+
+        except Exception:
+            logger.exception(
+                "Failed to save baseline to s3://%s/%s",
+                self.bucket,
+                self.baseline_key,
+            )
+            raise
 
     def update(self, baseline: dict, channel: str, new_values: list[float]) -> dict:
         """
@@ -52,7 +91,6 @@ class BaselineManager:
             delta2 = value - state["mean"]
             state["M2"] += delta * delta2
 
-        # Only compute std once we have enough observations
         if state["count"] >= 2:
             variance = state["M2"] / state["count"]
             state["std"] = math.sqrt(variance)
@@ -60,6 +98,13 @@ class BaselineManager:
             state["std"] = 0.0
 
         baseline[channel] = state
+        logger.info(
+            "Updated baseline for channel=%s count=%s mean=%.4f std=%.4f",
+            channel,
+            state["count"],
+            state["mean"],
+            state["std"],
+        )
         return baseline
 
     def get_stats(self, baseline: dict, channel: str) -> Optional[dict]:
