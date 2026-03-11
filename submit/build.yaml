@@ -1,1 +1,226 @@
 # cloudformation solution goes here
+AWSTemplateFormatVersion: '2010-09-09'
+Description: DS5220 Data Project 1 - Anomaly Detection Pipeline
+
+Parameters:
+  KeyName:
+    Type: AWS::EC2::KeyPair::KeyName
+    Description: Existing EC2 key pair name for SSH access
+
+  MyIpCidr:
+    Type: String
+    Description: Your public IP in CIDR format for SSH access, e.g. 1.2.3.4/32
+
+  RepoUrl:
+    Type: String
+    Description: Public HTTPS clone URL of your forked anomaly-detection GitHub repo
+
+  AmiId:
+    Type: AWS::EC2::Image::Id
+    Description: Ubuntu 24.04 LTS AMI ID for your AWS region
+
+  InstanceType:
+    Type: String
+    Default: t3.micro
+    AllowedValues:
+      - t3.micro
+    Description: EC2 instance type
+
+Resources:
+  SnsTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: ds5220-dp1
+
+  SnsTopicPolicy:
+    Type: AWS::SNS::TopicPolicy
+    Properties:
+      Topics:
+        - !Ref SnsTopic
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: AllowS3PublishToTopic
+            Effect: Allow
+            Principal:
+              Service: s3.amazonaws.com
+            Action:
+              - sns:Publish
+            Resource: !Ref SnsTopic
+            Condition:
+              StringEquals:
+                aws:SourceAccount: !Ref AWS::AccountId
+
+  DataBucket:
+    Type: AWS::S3::Bucket
+    DependsOn:
+      - SnsTopicPolicy
+    Properties:
+      NotificationConfiguration:
+        TopicConfigurations:
+          - Event: s3:ObjectCreated:Put
+            Topic: !Ref SnsTopic
+            Filter:
+              S3Key:
+                Rules:
+                  - Name: prefix
+                    Value: raw/
+                  - Name: suffix
+                    Value: .csv
+
+  Ec2Role:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - ec2.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Policies:
+        - PolicyName: BucketOnlyAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Sid: ListBucket
+                Effect: Allow
+                Action:
+                  - s3:ListBucket
+                Resource: !GetAtt DataBucket.Arn
+              - Sid: ObjectAccess
+                Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:PutObject
+                  - s3:DeleteObject
+                Resource: !Sub '${DataBucket.Arn}/*'
+
+  Ec2InstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles:
+        - !Ref Ec2Role
+
+  AppSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow SSH from user IP and FastAPI on port 8000
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: !Ref MyIpCidr
+        - IpProtocol: tcp
+          FromPort: 8000
+          ToPort: 8000
+          CidrIp: 0.0.0.0/0
+
+
+  AppInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: !Ref AmiId
+      InstanceType: !Ref InstanceType
+      KeyName: !Ref KeyName
+      IamInstanceProfile: !Ref Ec2InstanceProfile
+      SecurityGroupIds:
+        - !Ref AppSecurityGroup
+      BlockDeviceMappings:
+        - DeviceName: /dev/sda1
+          Ebs:
+            VolumeSize: 16
+            VolumeType: gp3
+            DeleteOnTermination: true
+      Tags:
+        - Key: Name
+          Value: !Sub '${AWS::StackName}-anomaly-instance'
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          set -euxo pipefail
+
+          exec > >(tee /var/log/user-data.log | logger -t user-data -s 2>/dev/console) 2>&1
+
+          apt-get update -y
+          apt-get install -y git python3 python3-pip python3-venv curl
+
+          export BUCKET_NAME="${DataBucket}"
+          grep -q '^BUCKET_NAME=' /etc/environment || echo "BUCKET_NAME=${DataBucket}" >> /etc/environment
+
+          rm -rf /opt/anomaly-detection
+          git clone "${RepoUrl}" /opt/anomaly-detection
+          chown -R ubuntu:ubuntu /opt/anomaly-detection
+
+          python3 -m venv /opt/anomaly-detection/venv
+          /opt/anomaly-detection/venv/bin/pip install --upgrade pip
+          /opt/anomaly-detection/venv/bin/pip install -r /opt/anomaly-detection/requirements.txt
+
+          cat > /etc/systemd/system/anomaly-api.service <<EOF
+          [Unit]
+          Description=Anomaly Detection FastAPI Service
+          After=network.target
+
+          [Service]
+          Type=simple
+          User=ubuntu
+          WorkingDirectory=/opt/anomaly-detection
+          Environment=BUCKET_NAME=${DataBucket}
+          ExecStart=/opt/anomaly-detection/venv/bin/fastapi run /opt/anomaly-detection/app.py --host 0.0.0.0 --port 8000
+          Restart=always
+          RestartSec=5
+
+          [Install]
+          WantedBy=multi-user.target
+          EOF
+
+          systemctl daemon-reload
+          systemctl enable anomaly-api
+          systemctl start anomaly-api
+
+  ElasticIp:
+    Type: AWS::EC2::EIP
+    Properties:
+      Domain: vpc
+
+  ElasticIpAssociation:
+    Type: AWS::EC2::EIPAssociation
+    Properties:
+      AllocationId: !GetAtt ElasticIp.AllocationId
+      InstanceId: !Ref AppInstance
+
+  SnsHttpSubscription:
+    Type: AWS::SNS::Subscription
+    DependsOn:
+      - ElasticIpAssociation
+    Properties:
+      TopicArn: !Ref SnsTopic
+      Protocol: http
+      Endpoint: !Sub 'http://${ElasticIp.PublicIp}:8000/notify'
+
+Outputs:
+  BucketName:
+    Description: Name of the S3 bucket used by the application
+    Value: !Ref DataBucket
+
+  InstanceId:
+    Description: EC2 instance ID
+    Value: !Ref AppInstance
+
+  ElasticIpAddress:
+    Description: Elastic IP attached to the instance
+    Value: !Ref ElasticIp
+
+  ApiHealthUrl:
+    Description: FastAPI health endpoint
+    Value: !Sub 'http://${ElasticIp.PublicIp}:8000/health'
+
+  ApiDocsUrl:
+    Description: FastAPI docs endpoint
+    Value: !Sub 'http://${ElasticIp.PublicIp}:8000/docs'
+
+  SnsTopicArn:
+    Description: SNS topic ARN
+    Value: !Ref SnsTopic

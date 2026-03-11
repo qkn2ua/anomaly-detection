@@ -1,0 +1,1284 @@
+2026-03-11 05:57:18,918 INFO anomaly_pipeline Received SNS request with message type: SubscriptionConfirmation
+2026-03-11 05:57:18,919 INFO anomaly_pipeline Confirming SNS subscription.
+2026-03-11 05:57:19,067 INFO anomaly_pipeline SNS subscription confirmed successfully.
+2026-03-11 06:23:13,401 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:23:13,401 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T062312.csv
+2026-03-11 06:23:13,402 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T062312.csv
+2026-03-11 06:23:13,412 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T062312.csv
+2026-03-11 06:23:13,532 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T062312.csv
+2026-03-11 06:23:13,534 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T062312.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:23:13,607 INFO anomaly_pipeline.baseline Baseline file does not exist yet at s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json. Starting fresh.
+2026-03-11 06:23:13,617 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=100 mean=22.0490 std=2.3104
+2026-03-11 06:23:13,618 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=100 mean=54.9321 std=5.0716
+2026-03-11 06:23:13,619 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=100 mean=1012.6373 std=3.6873
+2026-03-11 06:23:13,619 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=100 mean=9.7758 std=2.6282
+2026-03-11 06:23:13,866 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T062312.csv
+2026-03-11 06:23:13,894 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:23:13,920 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:23:13,947 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T062312_summary.json
+2026-03-11 06:23:13,947 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T062312.csv: 6/100 anomalies flagged
+2026-03-11 06:24:13,770 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:24:13,770 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T062412.csv
+2026-03-11 06:24:13,770 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T062412.csv
+2026-03-11 06:24:13,772 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T062412.csv
+2026-03-11 06:24:13,852 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T062412.csv
+2026-03-11 06:24:13,853 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T062412.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:24:13,950 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:24:13,950 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=200 mean=22.2969 std=2.3037
+2026-03-11 06:24:13,951 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=200 mean=55.5596 std=6.1201
+2026-03-11 06:24:13,951 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=200 mean=1012.8820 std=3.3833
+2026-03-11 06:24:13,951 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=200 mean=9.9954 std=2.8172
+2026-03-11 06:24:14,145 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T062412.csv
+2026-03-11 06:24:14,175 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:24:14,208 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:24:14,236 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T062412_summary.json
+2026-03-11 06:24:14,236 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T062412.csv: 5/100 anomalies flagged
+2026-03-11 06:25:14,257 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:25:14,257 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T062512.csv
+2026-03-11 06:25:14,257 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T062512.csv
+2026-03-11 06:25:14,259 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T062512.csv
+2026-03-11 06:25:14,344 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T062512.csv
+2026-03-11 06:25:14,344 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T062512.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:25:14,462 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:25:14,463 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=300 mean=22.3467 std=2.3141
+2026-03-11 06:25:14,463 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=300 mean=55.1783 std=5.8788
+2026-03-11 06:25:14,464 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=300 mean=1013.0876 std=3.3440
+2026-03-11 06:25:14,464 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=300 mean=9.9712 std=3.1513
+2026-03-11 06:25:14,671 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T062512.csv
+2026-03-11 06:25:14,703 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:25:14,732 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:25:14,817 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T062512_summary.json
+2026-03-11 06:25:14,817 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T062512.csv: 6/100 anomalies flagged
+2026-03-11 06:26:13,744 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:26:13,744 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T062613.csv
+2026-03-11 06:26:13,745 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T062613.csv
+2026-03-11 06:26:13,746 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T062613.csv
+2026-03-11 06:26:13,825 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T062613.csv
+2026-03-11 06:26:13,825 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T062613.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:26:13,893 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:26:13,893 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=400 mean=22.2422 std=2.4600
+2026-03-11 06:26:13,894 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=400 mean=55.1114 std=5.7758
+2026-03-11 06:26:13,894 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=400 mean=1013.0605 std=3.4916
+2026-03-11 06:26:13,895 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=400 mean=9.9702 std=2.9715
+2026-03-11 06:26:14,099 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T062613.csv
+2026-03-11 06:26:14,131 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:26:14,163 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:26:14,192 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T062613_summary.json
+2026-03-11 06:26:14,192 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T062613.csv: 6/100 anomalies flagged
+2026-03-11 06:27:14,265 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:27:14,265 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T062713.csv
+2026-03-11 06:27:14,265 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T062713.csv
+2026-03-11 06:27:14,267 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T062713.csv
+2026-03-11 06:27:14,344 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T062713.csv
+2026-03-11 06:27:14,344 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T062713.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:27:14,414 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:27:14,414 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=500 mean=22.1889 std=2.2964
+2026-03-11 06:27:14,415 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=500 mean=55.0279 std=5.8374
+2026-03-11 06:27:14,415 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=500 mean=1013.1180 std=3.7359
+2026-03-11 06:27:14,416 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=500 mean=10.0349 std=3.0509
+2026-03-11 06:27:14,609 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T062713.csv
+2026-03-11 06:27:14,652 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:27:14,683 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:27:14,710 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T062713_summary.json
+2026-03-11 06:27:14,710 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T062713.csv: 6/100 anomalies flagged
+2026-03-11 06:28:14,688 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:28:14,688 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T062813.csv
+2026-03-11 06:28:14,688 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T062813.csv
+2026-03-11 06:28:14,690 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T062813.csv
+2026-03-11 06:28:14,765 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T062813.csv
+2026-03-11 06:28:14,765 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T062813.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:28:14,859 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:28:14,860 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=600 mean=22.1459 std=2.2494
+2026-03-11 06:28:14,860 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=600 mean=55.2081 std=5.6447
+2026-03-11 06:28:14,861 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=600 mean=1013.0274 std=4.1686
+2026-03-11 06:28:14,861 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=600 mean=10.0088 std=2.9565
+2026-03-11 06:28:15,053 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T062813.csv
+2026-03-11 06:28:15,094 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:28:15,123 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:28:15,152 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T062813_summary.json
+2026-03-11 06:28:15,152 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T062813.csv: 6/100 anomalies flagged
+2026-03-11 06:29:14,995 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:29:14,995 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T062913.csv
+2026-03-11 06:29:14,995 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T062913.csv
+2026-03-11 06:29:14,996 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T062913.csv
+2026-03-11 06:29:15,065 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T062913.csv
+2026-03-11 06:29:15,065 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T062913.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:29:15,283 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:29:15,284 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=700 mean=22.1162 std=2.2100
+2026-03-11 06:29:15,284 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=700 mean=55.0957 std=5.5402
+2026-03-11 06:29:15,285 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=700 mean=1013.0503 std=4.1780
+2026-03-11 06:29:15,285 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=700 mean=10.0470 std=2.9678
+2026-03-11 06:29:15,476 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T062913.csv
+2026-03-11 06:29:15,511 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:29:15,541 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:29:15,566 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T062913_summary.json
+2026-03-11 06:29:15,566 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T062913.csv: 5/100 anomalies flagged
+2026-03-11 06:30:14,826 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:30:14,826 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T063013.csv
+2026-03-11 06:30:14,826 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T063013.csv
+2026-03-11 06:30:14,828 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T063013.csv
+2026-03-11 06:30:14,905 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T063013.csv
+2026-03-11 06:30:14,905 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T063013.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:30:14,976 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:30:14,977 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=800 mean=22.1187 std=2.1274
+2026-03-11 06:30:14,978 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=800 mean=55.0408 std=5.4283
+2026-03-11 06:30:14,978 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=800 mean=1012.9832 std=4.3407
+2026-03-11 06:30:14,978 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=800 mean=10.1026 std=2.9542
+2026-03-11 06:30:15,165 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T063013.csv
+2026-03-11 06:30:15,193 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:30:15,223 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:30:15,250 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T063013_summary.json
+2026-03-11 06:30:15,250 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T063013.csv: 7/100 anomalies flagged
+2026-03-11 06:31:15,219 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:31:15,220 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T063113.csv
+2026-03-11 06:31:15,220 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T063113.csv
+2026-03-11 06:31:15,221 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T063113.csv
+2026-03-11 06:31:15,292 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T063113.csv
+2026-03-11 06:31:15,292 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T063113.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:31:15,374 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:31:15,375 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=900 mean=22.0805 std=2.1236
+2026-03-11 06:31:15,375 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=900 mean=54.9219 std=6.0748
+2026-03-11 06:31:15,376 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=900 mean=1012.9639 std=4.2259
+2026-03-11 06:31:15,376 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=900 mean=10.0341 std=2.9597
+2026-03-11 06:31:15,567 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T063113.csv
+2026-03-11 06:31:15,596 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:31:15,621 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:31:15,649 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T063113_summary.json
+2026-03-11 06:31:15,649 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T063113.csv: 6/100 anomalies flagged
+2026-03-11 06:32:15,624 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:32:15,624 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T063214.csv
+2026-03-11 06:32:15,624 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T063214.csv
+2026-03-11 06:32:15,626 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T063214.csv
+2026-03-11 06:32:15,727 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T063214.csv
+2026-03-11 06:32:15,727 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T063214.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:32:15,808 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:32:15,809 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=1000 mean=22.0523 std=2.1608
+2026-03-11 06:32:15,809 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=1000 mean=54.9155 std=6.0747
+2026-03-11 06:32:15,810 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=1000 mean=1012.9739 std=4.1665
+2026-03-11 06:32:15,810 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=1000 mean=10.0925 std=3.0119
+2026-03-11 06:32:16,010 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T063214.csv
+2026-03-11 06:32:16,037 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:32:16,074 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:32:16,106 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T063214_summary.json
+2026-03-11 06:32:16,106 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T063214.csv: 5/100 anomalies flagged
+2026-03-11 06:32:44,872 INFO anomaly_pipeline Returning anomaly summary for 10 processed files.
+2026-03-11 06:33:11,635 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:33:11,635 INFO anomaly_pipeline Returning current baseline with 4 channels.
+2026-03-11 06:33:15,171 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:33:15,171 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T063314.csv
+2026-03-11 06:33:15,171 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T063314.csv
+2026-03-11 06:33:15,172 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T063314.csv
+2026-03-11 06:33:15,285 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T063314.csv
+2026-03-11 06:33:15,285 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T063314.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:33:15,312 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:33:15,313 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=1100 mean=22.0588 std=2.1380
+2026-03-11 06:33:15,314 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=1100 mean=54.9880 std=6.1343
+2026-03-11 06:33:15,314 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=1100 mean=1012.9202 std=4.2356
+2026-03-11 06:33:15,314 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=1100 mean=10.1070 std=2.9604
+2026-03-11 06:33:15,513 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T063314.csv
+2026-03-11 06:33:15,557 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:33:15,591 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:33:15,623 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T063314_summary.json
+2026-03-11 06:33:15,623 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T063314.csv: 6/100 anomalies flagged
+2026-03-11 06:33:30,001 INFO anomaly_pipeline Returning 50 recent anomalies.
+2026-03-11 06:34:15,782 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:34:15,782 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T063414.csv
+2026-03-11 06:34:15,782 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T063414.csv
+2026-03-11 06:34:15,784 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T063414.csv
+2026-03-11 06:34:15,856 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T063414.csv
+2026-03-11 06:34:15,856 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T063414.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:34:15,931 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:34:15,931 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=1200 mean=22.0715 std=2.1341
+2026-03-11 06:34:15,932 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=1200 mean=54.9686 std=6.0142
+2026-03-11 06:34:15,932 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=1200 mean=1012.9429 std=4.2436
+2026-03-11 06:34:15,933 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=1200 mean=10.0738 std=2.9680
+2026-03-11 06:34:16,118 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T063414.csv
+2026-03-11 06:34:16,153 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:34:16,181 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:34:16,209 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T063414_summary.json
+2026-03-11 06:34:16,209 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T063414.csv: 5/100 anomalies flagged
+2026-03-11 06:35:16,052 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:35:16,052 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T063514.csv
+2026-03-11 06:35:16,052 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T063514.csv
+2026-03-11 06:35:16,054 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T063514.csv
+2026-03-11 06:35:16,146 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T063514.csv
+2026-03-11 06:35:16,146 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T063514.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:35:16,227 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:35:16,228 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=1300 mean=22.0563 std=2.1196
+2026-03-11 06:35:16,228 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=1300 mean=54.8926 std=6.2222
+2026-03-11 06:35:16,229 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=1300 mean=1012.9385 std=4.1823
+2026-03-11 06:35:16,229 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=1300 mean=10.0665 std=2.9303
+2026-03-11 06:35:16,438 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T063514.csv
+2026-03-11 06:35:16,465 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:35:16,502 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:35:16,535 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T063514_summary.json
+2026-03-11 06:35:16,535 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T063514.csv: 6/100 anomalies flagged
+2026-03-11 06:42:33,676 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:42:33,677 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T064232.csv
+2026-03-11 06:42:33,677 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T064232.csv
+2026-03-11 06:42:33,678 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T064232.csv
+2026-03-11 06:42:33,761 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T064232.csv
+2026-03-11 06:42:33,761 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T064232.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:42:33,823 INFO anomaly_pipeline.baseline Baseline file does not exist yet at s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json. Starting fresh.
+2026-03-11 06:42:33,824 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=100 mean=22.1366 std=1.5914
+2026-03-11 06:42:33,824 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=100 mean=54.4885 std=6.7434
+2026-03-11 06:42:33,825 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=100 mean=1012.3319 std=4.4049
+2026-03-11 06:42:33,825 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=100 mean=10.4990 std=3.0907
+2026-03-11 06:42:34,010 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064232.csv
+2026-03-11 06:42:34,036 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:42:34,104 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:42:34,132 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064232_summary.json
+2026-03-11 06:42:34,132 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T064232.csv: 7/100 anomalies flagged
+2026-03-11 06:43:33,323 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:43:33,323 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T064332.csv
+2026-03-11 06:43:33,323 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T064332.csv
+2026-03-11 06:43:33,325 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T064332.csv
+2026-03-11 06:43:33,398 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T064332.csv
+2026-03-11 06:43:33,398 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T064332.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:43:33,491 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:43:33,492 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=200 mean=22.1302 std=1.9972
+2026-03-11 06:43:33,492 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=200 mean=54.4794 std=6.6636
+2026-03-11 06:43:33,493 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=200 mean=1012.5498 std=4.0097
+2026-03-11 06:43:33,493 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=200 mean=10.3617 std=2.7887
+2026-03-11 06:43:33,678 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064332.csv
+2026-03-11 06:43:33,708 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:43:33,741 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:43:33,767 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064332_summary.json
+2026-03-11 06:43:33,767 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T064332.csv: 5/100 anomalies flagged
+2026-03-11 06:44:33,755 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:44:33,755 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T064432.csv
+2026-03-11 06:44:33,755 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T064432.csv
+2026-03-11 06:44:33,756 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T064432.csv
+2026-03-11 06:44:33,828 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T064432.csv
+2026-03-11 06:44:33,828 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T064432.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:44:33,900 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:44:33,900 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=300 mean=22.0188 std=1.9090
+2026-03-11 06:44:33,901 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=300 mean=54.3978 std=6.1855
+2026-03-11 06:44:33,901 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=300 mean=1012.6581 std=3.7337
+2026-03-11 06:44:33,902 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=300 mean=10.2144 std=3.8760
+2026-03-11 06:44:34,102 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064432.csv
+2026-03-11 06:44:34,127 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:44:34,166 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:44:34,201 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064432_summary.json
+2026-03-11 06:44:34,201 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T064432.csv: 7/100 anomalies flagged
+2026-03-11 06:45:34,174 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:45:34,174 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T064532.csv
+2026-03-11 06:45:34,174 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T064532.csv
+2026-03-11 06:45:34,175 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T064532.csv
+2026-03-11 06:45:34,249 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T064532.csv
+2026-03-11 06:45:34,250 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T064532.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:45:34,322 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:45:34,323 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=400 mean=22.0802 std=1.9364
+2026-03-11 06:45:34,324 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=400 mean=54.6685 std=6.6780
+2026-03-11 06:45:34,324 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=400 mean=1012.6977 std=3.6514
+2026-03-11 06:45:34,324 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=400 mean=10.2025 std=3.6506
+2026-03-11 06:45:34,519 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064532.csv
+2026-03-11 06:45:34,550 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:45:34,584 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:45:34,608 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064532_summary.json
+2026-03-11 06:45:34,609 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T064532.csv: 5/100 anomalies flagged
+2026-03-11 06:46:33,650 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:46:33,651 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T064632.csv
+2026-03-11 06:46:33,651 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T064632.csv
+2026-03-11 06:46:33,652 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T064632.csv
+2026-03-11 06:46:33,751 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T064632.csv
+2026-03-11 06:46:33,751 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T064632.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:46:33,844 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:46:33,845 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=500 mean=22.0659 std=1.8687
+2026-03-11 06:46:33,845 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=500 mean=54.7351 std=6.4054
+2026-03-11 06:46:33,846 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=500 mean=1012.7569 std=3.5902
+2026-03-11 06:46:33,846 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=500 mean=10.0262 std=3.6911
+2026-03-11 06:46:34,038 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064632.csv
+2026-03-11 06:46:34,067 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:46:34,097 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:46:34,125 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064632_summary.json
+2026-03-11 06:46:34,125 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T064632.csv: 5/100 anomalies flagged
+2026-03-11 06:47:34,316 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:47:34,316 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T064733.csv
+2026-03-11 06:47:34,316 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T064733.csv
+2026-03-11 06:47:34,318 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T064733.csv
+2026-03-11 06:47:34,389 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T064733.csv
+2026-03-11 06:47:34,389 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T064733.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:47:34,460 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:47:34,461 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=600 mean=22.0731 std=1.8970
+2026-03-11 06:47:34,461 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=600 mean=54.6153 std=6.2273
+2026-03-11 06:47:34,462 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=600 mean=1012.7747 std=3.7048
+2026-03-11 06:47:34,462 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=600 mean=10.0617 std=3.5566
+2026-03-11 06:47:34,651 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064733.csv
+2026-03-11 06:47:34,681 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:47:34,706 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:47:34,732 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064733_summary.json
+2026-03-11 06:47:34,732 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T064733.csv: 5/100 anomalies flagged
+2026-03-11 06:48:34,738 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:48:34,739 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T064833.csv
+2026-03-11 06:48:34,739 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T064833.csv
+2026-03-11 06:48:34,740 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T064833.csv
+2026-03-11 06:48:34,813 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T064833.csv
+2026-03-11 06:48:34,814 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T064833.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:48:34,891 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:48:34,891 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=700 mean=22.0829 std=1.9061
+2026-03-11 06:48:34,892 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=700 mean=54.6044 std=6.0468
+2026-03-11 06:48:34,892 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=700 mean=1012.7979 std=3.6255
+2026-03-11 06:48:34,893 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=700 mean=10.0136 std=3.5355
+2026-03-11 06:48:35,096 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064833.csv
+2026-03-11 06:48:35,122 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:48:35,179 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:48:35,206 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064833_summary.json
+2026-03-11 06:48:35,206 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T064833.csv: 5/100 anomalies flagged
+2026-03-11 06:49:34,354 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:49:34,354 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T064933.csv
+2026-03-11 06:49:34,354 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T064933.csv
+2026-03-11 06:49:34,356 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T064933.csv
+2026-03-11 06:49:34,425 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T064933.csv
+2026-03-11 06:49:34,425 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T064933.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:49:34,501 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:49:34,502 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=800 mean=22.0552 std=1.8692
+2026-03-11 06:49:34,502 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=800 mean=54.6411 std=6.1317
+2026-03-11 06:49:34,503 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=800 mean=1012.8146 std=3.6252
+2026-03-11 06:49:34,503 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=800 mean=10.0265 std=3.5696
+2026-03-11 06:49:34,692 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064933.csv
+2026-03-11 06:49:34,718 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:49:34,763 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:49:34,790 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T064933_summary.json
+2026-03-11 06:49:34,790 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T064933.csv: 5/100 anomalies flagged
+2026-03-11 06:50:34,749 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:50:34,749 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T065033.csv
+2026-03-11 06:50:34,749 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T065033.csv
+2026-03-11 06:50:34,750 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T065033.csv
+2026-03-11 06:50:34,820 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T065033.csv
+2026-03-11 06:50:34,820 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T065033.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:50:34,917 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:50:34,917 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=900 mean=22.0725 std=1.8285
+2026-03-11 06:50:34,918 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=900 mean=54.6514 std=6.0069
+2026-03-11 06:50:34,918 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=900 mean=1012.7668 std=3.7790
+2026-03-11 06:50:34,919 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=900 mean=10.0058 std=3.6176
+2026-03-11 06:50:35,108 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065033.csv
+2026-03-11 06:50:35,143 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:50:35,170 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:50:35,198 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065033_summary.json
+2026-03-11 06:50:35,198 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T065033.csv: 5/100 anomalies flagged
+2026-03-11 06:51:35,204 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:51:35,204 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T065133.csv
+2026-03-11 06:51:35,204 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T065133.csv
+2026-03-11 06:51:35,205 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T065133.csv
+2026-03-11 06:51:35,281 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T065133.csv
+2026-03-11 06:51:35,282 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T065133.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:51:35,366 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:51:35,367 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=1000 mean=22.0798 std=1.8280
+2026-03-11 06:51:35,367 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=1000 mean=54.6853 std=5.9463
+2026-03-11 06:51:35,368 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=1000 mean=1012.7691 std=3.7935
+2026-03-11 06:51:35,368 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=1000 mean=10.0270 std=3.6528
+2026-03-11 06:51:35,555 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065133.csv
+2026-03-11 06:51:35,582 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:51:35,615 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:51:35,644 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065133_summary.json
+2026-03-11 06:51:35,644 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T065133.csv: 5/100 anomalies flagged
+2026-03-11 06:52:35,599 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:52:35,599 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T065234.csv
+2026-03-11 06:52:35,599 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T065234.csv
+2026-03-11 06:52:35,600 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T065234.csv
+2026-03-11 06:52:35,675 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T065234.csv
+2026-03-11 06:52:35,675 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T065234.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:52:35,745 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:52:35,745 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=1100 mean=22.0691 std=1.7939
+2026-03-11 06:52:35,746 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=1100 mean=54.7062 std=6.0555
+2026-03-11 06:52:35,746 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=1100 mean=1012.7859 std=3.7215
+2026-03-11 06:52:35,747 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=1100 mean=9.9997 std=3.6343
+2026-03-11 06:52:35,946 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065234.csv
+2026-03-11 06:52:35,971 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:52:36,000 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:52:36,029 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065234_summary.json
+2026-03-11 06:52:36,029 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T065234.csv: 6/100 anomalies flagged
+2026-03-11 06:53:35,157 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:53:35,157 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T065334.csv
+2026-03-11 06:53:35,157 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T065334.csv
+2026-03-11 06:53:35,159 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T065334.csv
+2026-03-11 06:53:35,235 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T065334.csv
+2026-03-11 06:53:35,235 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T065334.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:53:35,327 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:53:35,328 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=1200 mean=22.0588 std=1.7832
+2026-03-11 06:53:35,328 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=1200 mean=54.7082 std=6.0872
+2026-03-11 06:53:35,329 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=1200 mean=1012.7831 std=3.7209
+2026-03-11 06:53:35,329 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=1200 mean=9.9836 std=3.7023
+2026-03-11 06:53:35,521 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065334.csv
+2026-03-11 06:53:35,548 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:53:35,580 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:53:35,609 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065334_summary.json
+2026-03-11 06:53:35,609 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T065334.csv: 5/100 anomalies flagged
+2026-03-11 06:54:35,628 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:54:35,628 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T065434.csv
+2026-03-11 06:54:35,628 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T065434.csv
+2026-03-11 06:54:35,630 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T065434.csv
+2026-03-11 06:54:35,701 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T065434.csv
+2026-03-11 06:54:35,701 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T065434.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:54:35,777 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:54:35,778 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=1300 mean=22.0514 std=1.7614
+2026-03-11 06:54:35,778 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=1300 mean=54.6845 std=6.1603
+2026-03-11 06:54:35,779 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=1300 mean=1012.7834 std=3.6787
+2026-03-11 06:54:35,779 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=1300 mean=9.9844 std=3.8175
+2026-03-11 06:54:35,975 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065434.csv
+2026-03-11 06:54:36,006 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:54:36,036 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:54:36,061 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065434_summary.json
+2026-03-11 06:54:36,061 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T065434.csv: 5/100 anomalies flagged
+2026-03-11 06:55:36,083 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:55:36,083 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T065534.csv
+2026-03-11 06:55:36,083 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T065534.csv
+2026-03-11 06:55:36,084 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T065534.csv
+2026-03-11 06:55:36,159 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T065534.csv
+2026-03-11 06:55:36,159 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T065534.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:55:36,232 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:55:36,233 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=1400 mean=22.0339 std=1.8079
+2026-03-11 06:55:36,234 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=1400 mean=54.7771 std=6.1154
+2026-03-11 06:55:36,234 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=1400 mean=1012.8209 std=3.6532
+2026-03-11 06:55:36,234 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=1400 mean=10.0496 std=3.7918
+2026-03-11 06:55:36,421 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065534.csv
+2026-03-11 06:55:36,451 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:55:36,480 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:55:36,505 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065534_summary.json
+2026-03-11 06:55:36,505 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T065534.csv: 6/100 anomalies flagged
+2026-03-11 06:56:35,692 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:56:35,692 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T065634.csv
+2026-03-11 06:56:35,692 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T065634.csv
+2026-03-11 06:56:35,694 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T065634.csv
+2026-03-11 06:56:35,767 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T065634.csv
+2026-03-11 06:56:35,767 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T065634.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:56:35,843 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:56:35,843 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=1500 mean=22.0296 std=1.8529
+2026-03-11 06:56:35,844 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=1500 mean=54.8497 std=6.1025
+2026-03-11 06:56:35,844 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=1500 mean=1012.8295 std=3.7065
+2026-03-11 06:56:35,845 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=1500 mean=10.0234 std=3.7186
+2026-03-11 06:56:36,032 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065634.csv
+2026-03-11 06:56:36,059 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:56:36,090 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:56:36,112 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065634_summary.json
+2026-03-11 06:56:36,112 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T065634.csv: 5/100 anomalies flagged
+2026-03-11 06:57:36,151 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:57:36,151 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T065735.csv
+2026-03-11 06:57:36,151 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T065735.csv
+2026-03-11 06:57:36,153 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T065735.csv
+2026-03-11 06:57:36,227 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T065735.csv
+2026-03-11 06:57:36,228 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T065735.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:57:36,298 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:57:36,299 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=1600 mean=22.0264 std=1.8449
+2026-03-11 06:57:36,299 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=1600 mean=54.8658 std=6.0219
+2026-03-11 06:57:36,299 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=1600 mean=1012.8831 std=3.6826
+2026-03-11 06:57:36,300 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=1600 mean=10.0207 std=3.7840
+2026-03-11 06:57:36,513 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065735.csv
+2026-03-11 06:57:36,541 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:57:36,570 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:57:36,594 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065735_summary.json
+2026-03-11 06:57:36,594 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T065735.csv: 7/100 anomalies flagged
+2026-03-11 06:58:36,551 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:58:36,551 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T065835.csv
+2026-03-11 06:58:36,551 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T065835.csv
+2026-03-11 06:58:36,553 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T065835.csv
+2026-03-11 06:58:36,624 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T065835.csv
+2026-03-11 06:58:36,624 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T065835.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:58:36,696 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:58:36,697 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=1700 mean=22.0349 std=1.8487
+2026-03-11 06:58:36,697 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=1700 mean=54.9170 std=6.0621
+2026-03-11 06:58:36,698 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=1700 mean=1012.8845 std=3.6583
+2026-03-11 06:58:36,698 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=1700 mean=10.0441 std=3.7501
+2026-03-11 06:58:36,898 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065835.csv
+2026-03-11 06:58:36,927 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:58:36,975 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:58:37,011 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065835_summary.json
+2026-03-11 06:58:37,011 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T065835.csv: 5/100 anomalies flagged
+2026-03-11 06:59:36,911 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 06:59:36,911 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T065935.csv
+2026-03-11 06:59:36,911 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T065935.csv
+2026-03-11 06:59:36,912 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T065935.csv
+2026-03-11 06:59:36,981 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T065935.csv
+2026-03-11 06:59:36,981 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T065935.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 06:59:37,071 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:59:37,072 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=1800 mean=22.0279 std=1.8316
+2026-03-11 06:59:37,072 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=1800 mean=54.8896 std=6.0070
+2026-03-11 06:59:37,073 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=1800 mean=1012.8433 std=3.7083
+2026-03-11 06:59:37,073 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=1800 mean=10.0278 std=3.7656
+2026-03-11 06:59:37,263 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065935.csv
+2026-03-11 06:59:37,291 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 06:59:37,323 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 06:59:37,354 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T065935_summary.json
+2026-03-11 06:59:37,355 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T065935.csv: 6/100 anomalies flagged
+2026-03-11 07:00:37,365 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:00:37,365 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T070035.csv
+2026-03-11 07:00:37,365 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T070035.csv
+2026-03-11 07:00:37,366 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T070035.csv
+2026-03-11 07:00:37,445 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T070035.csv
+2026-03-11 07:00:37,446 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T070035.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:00:37,516 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:00:37,517 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=1900 mean=22.0165 std=1.8348
+2026-03-11 07:00:37,517 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=1900 mean=54.8158 std=6.1466
+2026-03-11 07:00:37,518 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=1900 mean=1012.8559 std=3.6958
+2026-03-11 07:00:37,518 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=1900 mean=10.0430 std=3.7159
+2026-03-11 07:00:37,711 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070035.csv
+2026-03-11 07:00:37,738 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:00:37,770 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:00:37,795 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070035_summary.json
+2026-03-11 07:00:37,795 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T070035.csv: 5/100 anomalies flagged
+2026-03-11 07:01:37,010 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:01:37,010 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T070136.csv
+2026-03-11 07:01:37,010 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T070136.csv
+2026-03-11 07:01:37,011 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T070136.csv
+2026-03-11 07:01:37,111 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T070136.csv
+2026-03-11 07:01:37,112 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T070136.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:01:37,213 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:01:37,214 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=2000 mean=22.0235 std=1.8112
+2026-03-11 07:01:37,215 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=2000 mean=54.8243 std=6.1253
+2026-03-11 07:01:37,215 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=2000 mean=1012.8347 std=3.7679
+2026-03-11 07:01:37,215 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=2000 mean=10.0262 std=3.7036
+2026-03-11 07:01:37,416 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070136.csv
+2026-03-11 07:01:37,464 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:01:37,508 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:01:37,546 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070136_summary.json
+2026-03-11 07:01:37,546 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T070136.csv: 7/100 anomalies flagged
+2026-03-11 07:02:37,558 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:02:37,558 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T070236.csv
+2026-03-11 07:02:37,558 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T070236.csv
+2026-03-11 07:02:37,559 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T070236.csv
+2026-03-11 07:02:37,631 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T070236.csv
+2026-03-11 07:02:37,631 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T070236.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:02:37,711 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:02:37,711 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=2100 mean=22.0383 std=1.8296
+2026-03-11 07:02:37,712 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=2100 mean=54.8499 std=6.1451
+2026-03-11 07:02:37,712 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=2100 mean=1012.8402 std=3.7529
+2026-03-11 07:02:37,713 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=2100 mean=10.0166 std=3.6576
+2026-03-11 07:02:37,903 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070236.csv
+2026-03-11 07:02:37,931 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:02:37,999 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:02:38,026 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070236_summary.json
+2026-03-11 07:02:38,026 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T070236.csv: 5/100 anomalies flagged
+2026-03-11 07:03:37,945 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:03:37,945 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T070336.csv
+2026-03-11 07:03:37,945 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T070336.csv
+2026-03-11 07:03:37,946 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T070336.csv
+2026-03-11 07:03:38,022 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T070336.csv
+2026-03-11 07:03:38,023 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T070336.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:03:38,105 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:03:38,106 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=2200 mean=22.0392 std=1.8087
+2026-03-11 07:03:38,106 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=2200 mean=54.8291 std=6.1048
+2026-03-11 07:03:38,107 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=2200 mean=1012.9019 std=3.7939
+2026-03-11 07:03:38,107 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=2200 mean=10.0307 std=3.6813
+2026-03-11 07:03:38,313 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070336.csv
+2026-03-11 07:03:38,346 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:03:38,408 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:03:38,440 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070336_summary.json
+2026-03-11 07:03:38,440 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T070336.csv: 6/100 anomalies flagged
+2026-03-11 07:04:37,499 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:04:37,499 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T070436.csv
+2026-03-11 07:04:37,499 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T070436.csv
+2026-03-11 07:04:37,501 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T070436.csv
+2026-03-11 07:04:37,573 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T070436.csv
+2026-03-11 07:04:37,573 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T070436.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:04:37,650 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:04:37,651 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=2300 mean=22.0475 std=1.8261
+2026-03-11 07:04:37,651 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=2300 mean=54.8212 std=6.0704
+2026-03-11 07:04:37,651 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=2300 mean=1012.9284 std=3.7980
+2026-03-11 07:04:37,652 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=2300 mean=10.0261 std=3.6591
+2026-03-11 07:04:37,843 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070436.csv
+2026-03-11 07:04:37,874 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:04:37,920 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:04:37,948 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070436_summary.json
+2026-03-11 07:04:37,948 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T070436.csv: 6/100 anomalies flagged
+2026-03-11 07:05:38,050 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:05:38,050 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T070537.csv
+2026-03-11 07:05:38,050 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T070537.csv
+2026-03-11 07:05:38,051 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T070537.csv
+2026-03-11 07:05:38,135 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T070537.csv
+2026-03-11 07:05:38,135 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T070537.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:05:38,204 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:05:38,205 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=2400 mean=22.0434 std=1.8158
+2026-03-11 07:05:38,205 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=2400 mean=54.8503 std=6.1962
+2026-03-11 07:05:38,206 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=2400 mean=1012.9150 std=3.7767
+2026-03-11 07:05:38,206 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=2400 mean=9.9942 std=3.6289
+2026-03-11 07:05:38,415 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070537.csv
+2026-03-11 07:05:38,444 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:05:38,504 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:05:38,541 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070537_summary.json
+2026-03-11 07:05:38,541 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T070537.csv: 6/100 anomalies flagged
+2026-03-11 07:06:38,574 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:06:38,574 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T070637.csv
+2026-03-11 07:06:38,574 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T070637.csv
+2026-03-11 07:06:38,575 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T070637.csv
+2026-03-11 07:06:38,655 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T070637.csv
+2026-03-11 07:06:38,655 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T070637.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:06:38,729 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:06:38,730 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=2500 mean=22.0368 std=1.8223
+2026-03-11 07:06:38,730 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=2500 mean=54.8419 std=6.2768
+2026-03-11 07:06:38,731 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=2500 mean=1012.9415 std=3.7814
+2026-03-11 07:06:38,731 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=2500 mean=10.0027 std=3.6125
+2026-03-11 07:06:38,933 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070637.csv
+2026-03-11 07:06:38,962 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:06:39,047 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:06:39,081 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070637_summary.json
+2026-03-11 07:06:39,081 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T070637.csv: 6/100 anomalies flagged
+2026-03-11 07:07:38,776 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:07:38,776 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T070737.csv
+2026-03-11 07:07:38,776 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T070737.csv
+2026-03-11 07:07:38,778 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T070737.csv
+2026-03-11 07:07:38,855 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T070737.csv
+2026-03-11 07:07:38,855 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T070737.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:07:38,934 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:07:38,934 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=2600 mean=22.0379 std=1.8237
+2026-03-11 07:07:38,935 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=2600 mean=54.8638 std=6.3128
+2026-03-11 07:07:38,935 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=2600 mean=1012.9452 std=3.7753
+2026-03-11 07:07:38,936 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=2600 mean=10.0046 std=3.5829
+2026-03-11 07:07:39,124 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070737.csv
+2026-03-11 07:07:39,163 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:07:39,208 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:07:39,240 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070737_summary.json
+2026-03-11 07:07:39,240 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T070737.csv: 6/100 anomalies flagged
+2026-03-11 07:08:39,288 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:08:39,289 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T070837.csv
+2026-03-11 07:08:39,289 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T070837.csv
+2026-03-11 07:08:39,290 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T070837.csv
+2026-03-11 07:08:39,369 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T070837.csv
+2026-03-11 07:08:39,369 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T070837.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:08:39,518 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:08:39,519 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=2700 mean=22.0438 std=1.8552
+2026-03-11 07:08:39,520 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=2700 mean=54.8758 std=6.2502
+2026-03-11 07:08:39,520 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=2700 mean=1012.9702 std=3.7717
+2026-03-11 07:08:39,521 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=2700 mean=9.9995 std=3.5506
+2026-03-11 07:08:39,711 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070837.csv
+2026-03-11 07:08:39,745 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:08:39,800 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:08:39,829 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070837_summary.json
+2026-03-11 07:08:39,829 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T070837.csv: 5/100 anomalies flagged
+2026-03-11 07:09:39,836 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:09:39,836 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T070938.csv
+2026-03-11 07:09:39,836 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T070938.csv
+2026-03-11 07:09:39,838 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T070938.csv
+2026-03-11 07:09:39,910 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T070938.csv
+2026-03-11 07:09:39,910 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T070938.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:09:39,983 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:09:39,984 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=2800 mean=22.0360 std=1.8510
+2026-03-11 07:09:39,984 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=2800 mean=54.8651 std=6.2257
+2026-03-11 07:09:39,984 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=2800 mean=1012.9517 std=3.7999
+2026-03-11 07:09:39,985 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=2800 mean=10.0101 std=3.5256
+2026-03-11 07:09:40,174 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070938.csv
+2026-03-11 07:09:40,205 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:09:40,293 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:09:40,321 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T070938_summary.json
+2026-03-11 07:09:40,322 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T070938.csv: 7/100 anomalies flagged
+2026-03-11 07:10:39,266 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:10:39,266 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T071038.csv
+2026-03-11 07:10:39,266 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T071038.csv
+2026-03-11 07:10:39,267 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T071038.csv
+2026-03-11 07:10:39,336 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T071038.csv
+2026-03-11 07:10:39,337 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T071038.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:10:39,454 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:10:39,455 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=2900 mean=22.0355 std=1.8420
+2026-03-11 07:10:39,455 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=2900 mean=54.8232 std=6.3406
+2026-03-11 07:10:39,455 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=2900 mean=1012.9755 std=3.7973
+2026-03-11 07:10:39,456 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=2900 mean=10.0000 std=3.4880
+2026-03-11 07:10:39,661 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071038.csv
+2026-03-11 07:10:39,693 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:10:39,739 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:10:39,767 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071038_summary.json
+2026-03-11 07:10:39,767 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T071038.csv: 6/100 anomalies flagged
+2026-03-11 07:11:39,747 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:11:39,747 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T071138.csv
+2026-03-11 07:11:39,747 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T071138.csv
+2026-03-11 07:11:39,749 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T071138.csv
+2026-03-11 07:11:39,822 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T071138.csv
+2026-03-11 07:11:39,823 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T071138.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:11:39,907 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:11:39,908 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=3000 mean=22.0385 std=1.8520
+2026-03-11 07:11:39,909 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=3000 mean=54.8189 std=6.4178
+2026-03-11 07:11:39,909 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=3000 mean=1012.9700 std=3.7768
+2026-03-11 07:11:39,909 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=3000 mean=10.0106 std=3.4653
+2026-03-11 07:11:40,102 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071138.csv
+2026-03-11 07:11:40,137 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:11:40,236 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:11:40,264 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071138_summary.json
+2026-03-11 07:11:40,265 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T071138.csv: 7/100 anomalies flagged
+2026-03-11 07:12:40,167 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:12:40,168 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T071238.csv
+2026-03-11 07:12:40,168 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T071238.csv
+2026-03-11 07:12:40,169 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T071238.csv
+2026-03-11 07:12:40,241 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T071238.csv
+2026-03-11 07:12:40,241 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T071238.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:12:40,350 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:12:40,350 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=3100 mean=22.0327 std=1.8370
+2026-03-11 07:12:40,351 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=3100 mean=54.8268 std=6.3858
+2026-03-11 07:12:40,351 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=3100 mean=1012.9864 std=3.7607
+2026-03-11 07:12:40,352 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=3100 mean=9.9972 std=3.5091
+2026-03-11 07:12:40,542 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071238.csv
+2026-03-11 07:12:40,569 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:12:40,618 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:12:40,650 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071238_summary.json
+2026-03-11 07:12:40,650 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T071238.csv: 5/100 anomalies flagged
+2026-03-11 07:13:40,664 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:13:40,665 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T071339.csv
+2026-03-11 07:13:40,665 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T071339.csv
+2026-03-11 07:13:40,666 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T071339.csv
+2026-03-11 07:13:40,740 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T071339.csv
+2026-03-11 07:13:40,740 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T071339.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:13:40,841 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:13:40,841 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=3200 mean=22.0318 std=1.8299
+2026-03-11 07:13:40,842 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=3200 mean=54.8426 std=6.3621
+2026-03-11 07:13:40,842 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=3200 mean=1012.9908 std=3.8491
+2026-03-11 07:13:40,843 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=3200 mean=9.9815 std=3.4843
+2026-03-11 07:13:41,034 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071339.csv
+2026-03-11 07:13:41,064 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:13:41,118 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:13:41,158 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071339_summary.json
+2026-03-11 07:13:41,159 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T071339.csv: 6/100 anomalies flagged
+2026-03-11 07:14:41,027 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:14:41,028 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T071439.csv
+2026-03-11 07:14:41,028 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T071439.csv
+2026-03-11 07:14:41,029 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T071439.csv
+2026-03-11 07:14:41,122 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T071439.csv
+2026-03-11 07:14:41,122 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T071439.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:14:41,225 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:14:41,226 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=3300 mean=22.0301 std=1.8183
+2026-03-11 07:14:41,227 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=3300 mean=54.8561 std=6.3921
+2026-03-11 07:14:41,227 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=3300 mean=1013.0157 std=3.8338
+2026-03-11 07:14:41,228 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=3300 mean=10.0148 std=3.5379
+2026-03-11 07:14:41,512 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071439.csv
+2026-03-11 07:14:41,542 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:14:41,614 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:14:41,651 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071439_summary.json
+2026-03-11 07:14:41,652 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T071439.csv: 7/100 anomalies flagged
+2026-03-11 07:15:40,823 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:15:40,823 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T071539.csv
+2026-03-11 07:15:40,823 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T071539.csv
+2026-03-11 07:15:40,825 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T071539.csv
+2026-03-11 07:15:40,906 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T071539.csv
+2026-03-11 07:15:40,906 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T071539.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:15:40,987 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:15:40,988 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=3400 mean=22.0364 std=1.8158
+2026-03-11 07:15:40,988 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=3400 mean=54.8657 std=6.4059
+2026-03-11 07:15:40,989 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=3400 mean=1013.0117 std=3.8221
+2026-03-11 07:15:40,989 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=3400 mean=10.0095 std=3.5171
+2026-03-11 07:15:41,179 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071539.csv
+2026-03-11 07:15:41,209 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:15:41,280 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:15:41,310 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071539_summary.json
+2026-03-11 07:15:41,310 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T071539.csv: 5/100 anomalies flagged
+2026-03-11 07:16:41,225 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:16:41,225 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T071640.csv
+2026-03-11 07:16:41,226 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T071640.csv
+2026-03-11 07:16:41,227 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T071640.csv
+2026-03-11 07:16:41,299 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T071640.csv
+2026-03-11 07:16:41,300 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T071640.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:16:41,419 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:16:41,420 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=3500 mean=22.0318 std=1.8076
+2026-03-11 07:16:41,420 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=3500 mean=54.8391 std=6.4054
+2026-03-11 07:16:41,421 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=3500 mean=1013.0306 std=3.8483
+2026-03-11 07:16:41,421 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=3500 mean=10.0060 std=3.4927
+2026-03-11 07:16:41,614 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071640.csv
+2026-03-11 07:16:41,652 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:16:41,683 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:16:41,706 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071640_summary.json
+2026-03-11 07:16:41,706 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T071640.csv: 5/100 anomalies flagged
+2026-03-11 07:17:41,626 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:17:41,627 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T071740.csv
+2026-03-11 07:17:41,627 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T071740.csv
+2026-03-11 07:17:41,628 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T071740.csv
+2026-03-11 07:17:41,747 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T071740.csv
+2026-03-11 07:17:41,747 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T071740.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:17:41,821 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:17:41,821 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=3600 mean=22.0309 std=1.7981
+2026-03-11 07:17:41,822 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=3600 mean=54.8693 std=6.4225
+2026-03-11 07:17:41,822 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=3600 mean=1013.0470 std=3.8481
+2026-03-11 07:17:41,823 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=3600 mean=10.0053 std=3.4781
+2026-03-11 07:17:42,014 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071740.csv
+2026-03-11 07:17:42,052 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:17:42,095 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:17:42,128 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071740_summary.json
+2026-03-11 07:17:42,128 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T071740.csv: 7/100 anomalies flagged
+2026-03-11 07:18:42,073 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:18:42,073 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T071840.csv
+2026-03-11 07:18:42,074 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T071840.csv
+2026-03-11 07:18:42,075 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T071840.csv
+2026-03-11 07:18:42,152 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T071840.csv
+2026-03-11 07:18:42,152 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T071840.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:18:42,258 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:18:42,259 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=3700 mean=22.0305 std=1.7973
+2026-03-11 07:18:42,259 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=3700 mean=54.8781 std=6.4179
+2026-03-11 07:18:42,260 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=3700 mean=1013.0528 std=3.8749
+2026-03-11 07:18:42,260 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=3700 mean=9.9940 std=3.4586
+2026-03-11 07:18:42,463 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071840.csv
+2026-03-11 07:18:42,497 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:18:42,557 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:18:42,608 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071840_summary.json
+2026-03-11 07:18:42,608 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T071840.csv: 5/100 anomalies flagged
+2026-03-11 07:19:42,355 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:19:42,355 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T071941.csv
+2026-03-11 07:19:42,355 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T071941.csv
+2026-03-11 07:19:42,356 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T071941.csv
+2026-03-11 07:19:42,434 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T071941.csv
+2026-03-11 07:19:42,434 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T071941.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:19:42,505 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:19:42,506 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=3800 mean=22.0347 std=1.7949
+2026-03-11 07:19:42,507 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=3800 mean=54.8733 std=6.4852
+2026-03-11 07:19:42,507 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=3800 mean=1013.0483 std=3.8505
+2026-03-11 07:19:42,507 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=3800 mean=9.9919 std=3.4518
+2026-03-11 07:19:42,699 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071941.csv
+2026-03-11 07:19:42,726 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:19:42,791 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:19:42,855 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T071941_summary.json
+2026-03-11 07:19:42,855 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T071941.csv: 6/100 anomalies flagged
+2026-03-11 07:20:42,834 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:20:42,834 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T072041.csv
+2026-03-11 07:20:42,834 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T072041.csv
+2026-03-11 07:20:42,836 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T072041.csv
+2026-03-11 07:20:42,906 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T072041.csv
+2026-03-11 07:20:42,906 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T072041.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:20:43,002 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:20:43,003 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=3900 mean=22.0333 std=1.8061
+2026-03-11 07:20:43,003 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=3900 mean=54.8781 std=6.4611
+2026-03-11 07:20:43,004 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=3900 mean=1013.0383 std=3.8655
+2026-03-11 07:20:43,004 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=3900 mean=9.9839 std=3.4304
+2026-03-11 07:20:43,195 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072041.csv
+2026-03-11 07:20:43,224 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:20:43,253 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:20:43,281 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072041_summary.json
+2026-03-11 07:20:43,281 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T072041.csv: 5/100 anomalies flagged
+2026-03-11 07:21:42,657 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:21:42,657 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T072141.csv
+2026-03-11 07:21:42,657 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T072141.csv
+2026-03-11 07:21:42,659 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T072141.csv
+2026-03-11 07:21:42,733 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T072141.csv
+2026-03-11 07:21:42,734 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T072141.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:21:42,810 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:21:42,810 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=4000 mean=22.0317 std=1.8251
+2026-03-11 07:21:42,811 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=4000 mean=54.8784 std=6.4572
+2026-03-11 07:21:42,811 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=4000 mean=1013.0372 std=3.8547
+2026-03-11 07:21:42,812 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=4000 mean=9.9881 std=3.4078
+2026-03-11 07:21:43,001 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072141.csv
+2026-03-11 07:21:43,031 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:21:43,070 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:21:43,099 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072141_summary.json
+2026-03-11 07:21:43,099 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T072141.csv: 5/100 anomalies flagged
+2026-03-11 07:22:42,957 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:22:42,957 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T072241.csv
+2026-03-11 07:22:42,958 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T072241.csv
+2026-03-11 07:22:42,959 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T072241.csv
+2026-03-11 07:22:43,032 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T072241.csv
+2026-03-11 07:22:43,032 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T072241.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:22:43,103 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:22:43,104 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=4100 mean=22.0366 std=1.8274
+2026-03-11 07:22:43,104 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=4100 mean=54.8929 std=6.4248
+2026-03-11 07:22:43,105 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=4100 mean=1013.0482 std=3.8351
+2026-03-11 07:22:43,105 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=4100 mean=9.9730 std=3.4153
+2026-03-11 07:22:43,299 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072241.csv
+2026-03-11 07:22:43,330 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:22:43,399 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:22:43,429 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072241_summary.json
+2026-03-11 07:22:43,429 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T072241.csv: 5/100 anomalies flagged
+2026-03-11 07:23:43,549 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:23:43,549 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T072342.csv
+2026-03-11 07:23:43,550 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T072342.csv
+2026-03-11 07:23:43,551 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T072342.csv
+2026-03-11 07:23:43,626 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T072342.csv
+2026-03-11 07:23:43,626 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T072342.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:23:43,698 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:23:43,699 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=4200 mean=22.0409 std=1.8310
+2026-03-11 07:23:43,700 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=4200 mean=54.8987 std=6.3984
+2026-03-11 07:23:43,700 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=4200 mean=1013.0362 std=3.8188
+2026-03-11 07:23:43,701 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=4200 mean=9.9842 std=3.4377
+2026-03-11 07:23:43,888 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072342.csv
+2026-03-11 07:23:43,920 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:23:44,014 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:23:44,044 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072342_summary.json
+2026-03-11 07:23:44,044 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T072342.csv: 6/100 anomalies flagged
+2026-03-11 07:24:43,666 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:24:43,666 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T072442.csv
+2026-03-11 07:24:43,667 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T072442.csv
+2026-03-11 07:24:43,668 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T072442.csv
+2026-03-11 07:24:43,737 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T072442.csv
+2026-03-11 07:24:43,738 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T072442.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:24:43,809 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:24:43,810 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=4300 mean=22.0451 std=1.8276
+2026-03-11 07:24:43,810 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=4300 mean=54.8943 std=6.3934
+2026-03-11 07:24:43,810 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=4300 mean=1013.0419 std=3.8134
+2026-03-11 07:24:43,811 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=4300 mean=9.9805 std=3.4174
+2026-03-11 07:24:44,002 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072442.csv
+2026-03-11 07:24:44,037 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:24:44,071 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:24:44,104 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072442_summary.json
+2026-03-11 07:24:44,104 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T072442.csv: 6/100 anomalies flagged
+2026-03-11 07:25:43,444 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:25:43,445 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T072542.csv
+2026-03-11 07:25:43,445 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T072542.csv
+2026-03-11 07:25:43,446 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T072542.csv
+2026-03-11 07:25:43,519 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T072542.csv
+2026-03-11 07:25:43,519 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T072542.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:25:43,588 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:25:43,589 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=4400 mean=22.0534 std=1.8294
+2026-03-11 07:25:43,589 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=4400 mean=54.9108 std=6.3656
+2026-03-11 07:25:43,590 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=4400 mean=1013.0493 std=3.8054
+2026-03-11 07:25:43,590 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=4400 mean=9.9720 std=3.4193
+2026-03-11 07:25:43,784 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072542.csv
+2026-03-11 07:25:43,811 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:25:43,844 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:25:43,870 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072542_summary.json
+2026-03-11 07:25:43,870 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T072542.csv: 6/100 anomalies flagged
+2026-03-11 07:26:43,800 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:26:43,800 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T072642.csv
+2026-03-11 07:26:43,801 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T072642.csv
+2026-03-11 07:26:43,802 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T072642.csv
+2026-03-11 07:26:43,885 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T072642.csv
+2026-03-11 07:26:43,885 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T072642.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:26:44,007 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:26:44,008 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=4500 mean=22.0472 std=1.8245
+2026-03-11 07:26:44,009 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=4500 mean=54.9071 std=6.3671
+2026-03-11 07:26:44,010 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=4500 mean=1013.0387 std=3.7871
+2026-03-11 07:26:44,010 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=4500 mean=9.9715 std=3.4267
+2026-03-11 07:26:44,200 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072642.csv
+2026-03-11 07:26:44,228 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:26:44,263 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:26:44,288 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072642_summary.json
+2026-03-11 07:26:44,288 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T072642.csv: 5/100 anomalies flagged
+2026-03-11 07:27:44,347 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:27:44,347 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T072743.csv
+2026-03-11 07:27:44,347 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T072743.csv
+2026-03-11 07:27:44,349 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T072743.csv
+2026-03-11 07:27:44,423 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T072743.csv
+2026-03-11 07:27:44,423 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T072743.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:27:44,491 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:27:44,492 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=4600 mean=22.0420 std=1.8196
+2026-03-11 07:27:44,492 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=4600 mean=54.9184 std=6.3324
+2026-03-11 07:27:44,493 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=4600 mean=1013.0482 std=3.7919
+2026-03-11 07:27:44,493 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=4600 mean=9.9681 std=3.4284
+2026-03-11 07:27:44,687 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072743.csv
+2026-03-11 07:27:44,724 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:27:44,756 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:27:44,782 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072743_summary.json
+2026-03-11 07:27:44,782 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T072743.csv: 6/100 anomalies flagged
+2026-03-11 07:28:44,537 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:28:44,537 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T072843.csv
+2026-03-11 07:28:44,537 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T072843.csv
+2026-03-11 07:28:44,539 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T072843.csv
+2026-03-11 07:28:44,607 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T072843.csv
+2026-03-11 07:28:44,607 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T072843.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:28:44,678 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:28:44,679 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=4700 mean=22.0401 std=1.8129
+2026-03-11 07:28:44,679 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=4700 mean=54.9113 std=6.3687
+2026-03-11 07:28:44,680 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=4700 mean=1013.0419 std=3.8026
+2026-03-11 07:28:44,680 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=4700 mean=9.9699 std=3.4284
+2026-03-11 07:28:44,931 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072843.csv
+2026-03-11 07:28:44,958 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:28:45,018 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:28:45,045 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072843_summary.json
+2026-03-11 07:28:45,045 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T072843.csv: 6/100 anomalies flagged
+2026-03-11 07:29:44,267 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:29:44,267 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T072943.csv
+2026-03-11 07:29:44,267 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T072943.csv
+2026-03-11 07:29:44,269 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T072943.csv
+2026-03-11 07:29:44,344 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T072943.csv
+2026-03-11 07:29:44,344 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T072943.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:29:44,429 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:29:44,430 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=4800 mean=22.0357 std=1.8055
+2026-03-11 07:29:44,430 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=4800 mean=54.8870 std=6.4547
+2026-03-11 07:29:44,431 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=4800 mean=1013.0414 std=3.7929
+2026-03-11 07:29:44,431 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=4800 mean=9.9570 std=3.4221
+2026-03-11 07:29:44,626 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072943.csv
+2026-03-11 07:29:44,656 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:29:44,730 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:29:44,778 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T072943_summary.json
+2026-03-11 07:29:44,778 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T072943.csv: 6/100 anomalies flagged
+2026-03-11 07:30:44,734 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:30:44,734 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T073043.csv
+2026-03-11 07:30:44,734 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T073043.csv
+2026-03-11 07:30:44,735 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T073043.csv
+2026-03-11 07:30:44,828 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T073043.csv
+2026-03-11 07:30:44,828 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T073043.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:30:44,901 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:30:44,901 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=4900 mean=22.0388 std=1.8004
+2026-03-11 07:30:44,902 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=4900 mean=54.8797 std=6.4686
+2026-03-11 07:30:44,902 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=4900 mean=1013.0364 std=3.7781
+2026-03-11 07:30:44,903 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=4900 mean=9.9595 std=3.4207
+2026-03-11 07:30:45,096 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073043.csv
+2026-03-11 07:30:45,128 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:30:45,180 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:30:45,207 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073043_summary.json
+2026-03-11 07:30:45,207 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T073043.csv: 5/100 anomalies flagged
+2026-03-11 07:31:45,181 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:31:45,181 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T073143.csv
+2026-03-11 07:31:45,181 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T073143.csv
+2026-03-11 07:31:45,182 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T073143.csv
+2026-03-11 07:31:45,264 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T073143.csv
+2026-03-11 07:31:45,264 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T073143.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:31:45,349 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:31:45,350 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=5000 mean=22.0393 std=1.8070
+2026-03-11 07:31:45,350 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=5000 mean=54.8921 std=6.4623
+2026-03-11 07:31:45,350 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=5000 mean=1013.0488 std=3.7732
+2026-03-11 07:31:45,351 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=5000 mean=9.9718 std=3.4168
+2026-03-11 07:31:45,542 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073143.csv
+2026-03-11 07:31:45,616 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:31:45,676 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:31:45,703 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073143_summary.json
+2026-03-11 07:31:45,703 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T073143.csv: 5/100 anomalies flagged
+2026-03-11 07:32:45,604 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:32:45,605 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T073244.csv
+2026-03-11 07:32:45,605 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T073244.csv
+2026-03-11 07:32:45,606 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T073244.csv
+2026-03-11 07:32:45,688 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T073244.csv
+2026-03-11 07:32:45,689 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T073244.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:32:45,760 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:32:45,760 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=5100 mean=22.0372 std=1.8075
+2026-03-11 07:32:45,761 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=5100 mean=54.8971 std=6.4449
+2026-03-11 07:32:45,761 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=5100 mean=1013.0560 std=3.7961
+2026-03-11 07:32:45,762 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=5100 mean=9.9819 std=3.3999
+2026-03-11 07:32:45,978 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073244.csv
+2026-03-11 07:32:46,007 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:32:46,044 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:32:46,077 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073244_summary.json
+2026-03-11 07:32:46,077 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T073244.csv: 5/100 anomalies flagged
+2026-03-11 07:33:45,208 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:33:45,208 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T073344.csv
+2026-03-11 07:33:45,208 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T073344.csv
+2026-03-11 07:33:45,209 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T073344.csv
+2026-03-11 07:33:45,282 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T073344.csv
+2026-03-11 07:33:45,283 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T073344.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:33:45,357 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:33:45,358 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=5200 mean=22.0456 std=1.8304
+2026-03-11 07:33:45,358 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=5200 mean=54.8997 std=6.4317
+2026-03-11 07:33:45,359 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=5200 mean=1013.0444 std=3.7893
+2026-03-11 07:33:45,359 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=5200 mean=9.9838 std=3.4019
+2026-03-11 07:33:45,547 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073344.csv
+2026-03-11 07:33:45,578 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:33:45,617 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:33:45,645 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073344_summary.json
+2026-03-11 07:33:45,645 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T073344.csv: 7/100 anomalies flagged
+2026-03-11 07:34:45,588 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:34:45,588 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T073444.csv
+2026-03-11 07:34:45,589 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T073444.csv
+2026-03-11 07:34:45,590 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T073444.csv
+2026-03-11 07:34:45,665 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T073444.csv
+2026-03-11 07:34:45,665 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T073444.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:34:45,740 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:34:45,740 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=5300 mean=22.0467 std=1.8290
+2026-03-11 07:34:45,741 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=5300 mean=54.8713 std=6.4352
+2026-03-11 07:34:45,741 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=5300 mean=1013.0432 std=3.8011
+2026-03-11 07:34:45,742 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=5300 mean=9.9866 std=3.3940
+2026-03-11 07:34:45,937 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073444.csv
+2026-03-11 07:34:45,962 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:34:45,996 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:34:46,083 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073444_summary.json
+2026-03-11 07:34:46,083 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T073444.csv: 5/100 anomalies flagged
+2026-03-11 07:35:46,063 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:35:46,063 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T073544.csv
+2026-03-11 07:35:46,063 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T073544.csv
+2026-03-11 07:35:46,064 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T073544.csv
+2026-03-11 07:35:46,136 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T073544.csv
+2026-03-11 07:35:46,137 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T073544.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:35:46,226 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:35:46,227 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=5400 mean=22.0480 std=1.8292
+2026-03-11 07:35:46,228 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=5400 mean=54.8672 std=6.4813
+2026-03-11 07:35:46,228 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=5400 mean=1013.0444 std=3.7863
+2026-03-11 07:35:46,228 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=5400 mean=9.9895 std=3.3924
+2026-03-11 07:35:46,452 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073544.csv
+2026-03-11 07:35:46,481 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:35:46,530 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:35:46,558 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073544_summary.json
+2026-03-11 07:35:46,558 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T073544.csv: 5/100 anomalies flagged
+2026-03-11 07:36:46,431 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:36:46,431 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T073644.csv
+2026-03-11 07:36:46,431 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T073644.csv
+2026-03-11 07:36:46,432 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T073644.csv
+2026-03-11 07:36:46,508 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T073644.csv
+2026-03-11 07:36:46,508 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T073644.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:36:46,640 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:36:46,641 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=5500 mean=22.0508 std=1.8255
+2026-03-11 07:36:46,641 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=5500 mean=54.8761 std=6.4946
+2026-03-11 07:36:46,641 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=5500 mean=1013.0532 std=3.7952
+2026-03-11 07:36:46,642 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=5500 mean=9.9903 std=3.3869
+2026-03-11 07:36:46,832 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073644.csv
+2026-03-11 07:36:46,867 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:36:46,918 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:36:46,949 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073644_summary.json
+2026-03-11 07:36:46,949 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T073644.csv: 5/100 anomalies flagged
+2026-03-11 07:37:46,735 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:37:46,735 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T073745.csv
+2026-03-11 07:37:46,735 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T073745.csv
+2026-03-11 07:37:46,736 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T073745.csv
+2026-03-11 07:37:46,811 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T073745.csv
+2026-03-11 07:37:46,811 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T073745.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:37:46,885 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:37:46,886 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=5600 mean=22.0470 std=1.8253
+2026-03-11 07:37:46,886 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=5600 mean=54.8767 std=6.4730
+2026-03-11 07:37:46,887 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=5600 mean=1013.0433 std=3.8141
+2026-03-11 07:37:46,887 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=5600 mean=9.9880 std=3.3740
+2026-03-11 07:37:47,079 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073745.csv
+2026-03-11 07:37:47,110 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:37:47,148 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:37:47,180 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073745_summary.json
+2026-03-11 07:37:47,180 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T073745.csv: 6/100 anomalies flagged
+2026-03-11 07:38:46,490 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:38:46,490 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T073845.csv
+2026-03-11 07:38:46,490 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T073845.csv
+2026-03-11 07:38:46,492 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T073845.csv
+2026-03-11 07:38:46,576 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T073845.csv
+2026-03-11 07:38:46,576 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T073845.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:38:46,676 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:38:46,676 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=5700 mean=22.0485 std=1.8329
+2026-03-11 07:38:46,677 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=5700 mean=54.8977 std=6.4825
+2026-03-11 07:38:46,677 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=5700 mean=1013.0392 std=3.7971
+2026-03-11 07:38:46,677 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=5700 mean=9.9935 std=3.3607
+2026-03-11 07:38:46,883 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073845.csv
+2026-03-11 07:38:46,921 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:38:47,029 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:38:47,064 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073845_summary.json
+2026-03-11 07:38:47,064 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T073845.csv: 6/100 anomalies flagged
+2026-03-11 07:39:47,003 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:39:47,003 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T073945.csv
+2026-03-11 07:39:47,003 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T073945.csv
+2026-03-11 07:39:47,004 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T073945.csv
+2026-03-11 07:39:47,081 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T073945.csv
+2026-03-11 07:39:47,081 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T073945.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:39:47,165 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:39:47,166 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=5800 mean=22.0483 std=1.8346
+2026-03-11 07:39:47,167 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=5800 mean=54.8933 std=6.4696
+2026-03-11 07:39:47,167 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=5800 mean=1013.0351 std=3.7951
+2026-03-11 07:39:47,167 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=5800 mean=9.9815 std=3.3765
+2026-03-11 07:39:47,366 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073945.csv
+2026-03-11 07:39:47,392 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:39:47,443 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:39:47,470 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T073945_summary.json
+2026-03-11 07:39:47,471 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T073945.csv: 6/100 anomalies flagged
+2026-03-11 07:40:47,215 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:40:47,215 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T074046.csv
+2026-03-11 07:40:47,215 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T074046.csv
+2026-03-11 07:40:47,216 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T074046.csv
+2026-03-11 07:40:47,294 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T074046.csv
+2026-03-11 07:40:47,294 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T074046.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:40:47,363 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:40:47,363 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=5900 mean=22.0485 std=1.8338
+2026-03-11 07:40:47,364 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=5900 mean=54.8830 std=6.4694
+2026-03-11 07:40:47,364 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=5900 mean=1013.0304 std=3.7957
+2026-03-11 07:40:47,365 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=5900 mean=9.9802 std=3.3668
+2026-03-11 07:40:47,603 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074046.csv
+2026-03-11 07:40:47,630 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:40:47,667 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:40:47,694 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074046_summary.json
+2026-03-11 07:40:47,694 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T074046.csv: 6/100 anomalies flagged
+2026-03-11 07:41:47,903 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:41:47,904 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T074146.csv
+2026-03-11 07:41:47,904 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T074146.csv
+2026-03-11 07:41:47,905 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T074146.csv
+2026-03-11 07:41:47,979 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T074146.csv
+2026-03-11 07:41:47,979 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T074146.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:41:48,138 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:41:48,139 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=6000 mean=22.0535 std=1.8391
+2026-03-11 07:41:48,140 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=6000 mean=54.8959 std=6.4552
+2026-03-11 07:41:48,140 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=6000 mean=1013.0270 std=3.7791
+2026-03-11 07:41:48,141 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=6000 mean=9.9706 std=3.3624
+2026-03-11 07:41:48,331 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074146.csv
+2026-03-11 07:41:48,362 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:41:48,399 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:41:48,432 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074146_summary.json
+2026-03-11 07:41:48,432 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T074146.csv: 6/100 anomalies flagged
+2026-03-11 07:42:47,399 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:42:47,399 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T074246.csv
+2026-03-11 07:42:47,399 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T074246.csv
+2026-03-11 07:42:47,400 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T074246.csv
+2026-03-11 07:42:47,479 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T074246.csv
+2026-03-11 07:42:47,479 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T074246.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:42:47,554 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:42:47,555 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=6100 mean=22.0561 std=1.8456
+2026-03-11 07:42:47,555 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=6100 mean=54.8997 std=6.4325
+2026-03-11 07:42:47,556 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=6100 mean=1013.0278 std=3.7707
+2026-03-11 07:42:47,556 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=6100 mean=9.9740 std=3.3612
+2026-03-11 07:42:47,746 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074246.csv
+2026-03-11 07:42:47,781 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:42:47,815 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:42:47,838 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074246_summary.json
+2026-03-11 07:42:47,838 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T074246.csv: 6/100 anomalies flagged
+2026-03-11 07:43:48,077 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:43:48,078 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T074346.csv
+2026-03-11 07:43:48,078 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T074346.csv
+2026-03-11 07:43:48,079 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T074346.csv
+2026-03-11 07:43:48,152 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T074346.csv
+2026-03-11 07:43:48,152 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T074346.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:43:48,254 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:43:48,254 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=6200 mean=22.0565 std=1.8456
+2026-03-11 07:43:48,255 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=6200 mean=54.9145 std=6.4391
+2026-03-11 07:43:48,255 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=6200 mean=1013.0266 std=3.7716
+2026-03-11 07:43:48,256 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=6200 mean=9.9756 std=3.3449
+2026-03-11 07:43:48,441 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074346.csv
+2026-03-11 07:43:48,469 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:43:48,501 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:43:48,527 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074346_summary.json
+2026-03-11 07:43:48,527 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T074346.csv: 5/100 anomalies flagged
+2026-03-11 07:44:48,325 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:44:48,325 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T074447.csv
+2026-03-11 07:44:48,325 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T074447.csv
+2026-03-11 07:44:48,326 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T074447.csv
+2026-03-11 07:44:48,398 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T074447.csv
+2026-03-11 07:44:48,398 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T074447.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:44:48,506 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:44:48,506 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=6300 mean=22.0555 std=1.8425
+2026-03-11 07:44:48,507 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=6300 mean=54.9238 std=6.4226
+2026-03-11 07:44:48,507 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=6300 mean=1013.0251 std=3.7646
+2026-03-11 07:44:48,507 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=6300 mean=9.9678 std=3.3704
+2026-03-11 07:44:48,696 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074447.csv
+2026-03-11 07:44:48,726 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:44:48,757 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:44:48,781 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074447_summary.json
+2026-03-11 07:44:48,781 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T074447.csv: 6/100 anomalies flagged
+2026-03-11 07:45:48,582 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:45:48,582 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T074547.csv
+2026-03-11 07:45:48,582 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T074547.csv
+2026-03-11 07:45:48,583 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T074547.csv
+2026-03-11 07:45:48,654 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T074547.csv
+2026-03-11 07:45:48,654 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T074547.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:45:48,726 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:45:48,727 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=6400 mean=22.0528 std=1.8510
+2026-03-11 07:45:48,728 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=6400 mean=54.9153 std=6.4379
+2026-03-11 07:45:48,728 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=6400 mean=1013.0247 std=3.7525
+2026-03-11 07:45:48,728 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=6400 mean=9.9746 std=3.3649
+2026-03-11 07:45:48,922 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074547.csv
+2026-03-11 07:45:48,954 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:45:48,984 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:45:49,027 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074547_summary.json
+2026-03-11 07:45:49,027 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T074547.csv: 5/100 anomalies flagged
+2026-03-11 07:46:48,230 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:46:48,230 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T074647.csv
+2026-03-11 07:46:48,231 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T074647.csv
+2026-03-11 07:46:48,232 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T074647.csv
+2026-03-11 07:46:48,304 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T074647.csv
+2026-03-11 07:46:48,304 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T074647.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:46:48,377 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:46:48,378 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=6500 mean=22.0537 std=1.8543
+2026-03-11 07:46:48,378 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=6500 mean=54.9096 std=6.4308
+2026-03-11 07:46:48,378 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=6500 mean=1013.0266 std=3.7479
+2026-03-11 07:46:48,379 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=6500 mean=9.9750 std=3.3583
+2026-03-11 07:46:48,570 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074647.csv
+2026-03-11 07:46:48,619 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:46:48,654 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:46:48,686 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074647_summary.json
+2026-03-11 07:46:48,686 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T074647.csv: 5/100 anomalies flagged
+2026-03-11 07:47:48,757 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:47:48,758 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T074747.csv
+2026-03-11 07:47:48,758 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T074747.csv
+2026-03-11 07:47:48,759 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T074747.csv
+2026-03-11 07:47:48,837 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T074747.csv
+2026-03-11 07:47:48,837 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T074747.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:47:48,979 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:47:48,980 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=6600 mean=22.0513 std=1.8575
+2026-03-11 07:47:48,980 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=6600 mean=54.9142 std=6.4265
+2026-03-11 07:47:48,981 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=6600 mean=1013.0306 std=3.7378
+2026-03-11 07:47:48,981 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=6600 mean=9.9806 std=3.3558
+2026-03-11 07:47:49,176 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074747.csv
+2026-03-11 07:47:49,206 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:47:49,240 INFO anomaly_pipeline.processor Synced local log file to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/logs/app.log
+2026-03-11 07:47:49,269 INFO anomaly_pipeline.processor Uploaded summary JSON to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074747_summary.json
+2026-03-11 07:47:49,269 INFO anomaly_pipeline.processor Finished processing raw/sensors_20260311T074747.csv: 5/100 anomalies flagged
+2026-03-11 07:48:49,227 INFO anomaly_pipeline Received SNS request with message type: Notification
+2026-03-11 07:48:49,227 INFO anomaly_pipeline SNS notification references key: raw/sensors_20260311T074847.csv
+2026-03-11 07:48:49,227 INFO anomaly_pipeline Queued background processing for key: raw/sensors_20260311T074847.csv
+2026-03-11 07:48:49,228 INFO anomaly_pipeline.processor Starting processing for s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/raw/sensors_20260311T074847.csv
+2026-03-11 07:48:49,302 INFO anomaly_pipeline.processor Loaded 100 rows from raw/sensors_20260311T074847.csv
+2026-03-11 07:48:49,302 INFO anomaly_pipeline.processor Available numeric columns in raw/sensors_20260311T074847.csv: ['temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 07:48:49,422 INFO anomaly_pipeline.baseline Loaded baseline from s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
+2026-03-11 07:48:49,423 INFO anomaly_pipeline.baseline Updated baseline for channel=temperature count=6700 mean=22.0446 std=1.8654
+2026-03-11 07:48:49,423 INFO anomaly_pipeline.baseline Updated baseline for channel=humidity count=6700 mean=54.9130 std=6.4216
+2026-03-11 07:48:49,423 INFO anomaly_pipeline.baseline Updated baseline for channel=pressure count=6700 mean=1013.0300 std=3.7382
+2026-03-11 07:48:49,424 INFO anomaly_pipeline.baseline Updated baseline for channel=wind_speed count=6700 mean=9.9849 std=3.3484
+2026-03-11 07:48:49,615 INFO anomaly_pipeline.processor Uploaded processed CSV to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/processed/sensors_20260311T074847.csv
+2026-03-11 07:48:49,643 INFO anomaly_pipeline.baseline Saved baseline to s3://ds5220-dp1-stack-databucket-wqd2tpcvio4a/state/baseline.json
